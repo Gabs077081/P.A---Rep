@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questão B</title>
+</head>
+<body>
+
+<script>
+    let anoInicial = Number(prompt("Digite o ano inicial:"));
+    let anoFinal = Number(prompt("Digite o ano final:"));
+    let ano = anoInicial;
+    let quantidade = 0;
+
+    while (ano <= anoFinal) {
+        if (ano % 4 == 0) {
+            quantidade++;
+        }
+
+        ano++;
+    }
+
+    document.write("Quantidade de anos bissextos: " + quantidade);
+</script>
+
+</body>
+</html>
