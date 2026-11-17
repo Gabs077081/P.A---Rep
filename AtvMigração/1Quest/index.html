@@ -1,0 +1,40 @@
+<script>
+
+var placa = parseInt(prompt("Digite o último número da placa do veículo:"));
+var dia;
+
+switch (placa) {
+
+    case 1:
+    case 2:
+        dia = "Segunda-feira";
+        break;
+
+    case 3:
+    case 4:
+        dia = "Terça-feira";
+        break;
+
+    case 5:
+    case 6:
+        dia = "Quarta-feira";
+        break;
+
+    case 7:
+    case 8:
+        dia = "Quinta-feira";
+        break;
+
+    case 9:
+    case 0:
+        dia = "Sexta-feira";
+        break;
+
+    default:
+        dia = "Número de placa inválido";
+}
+
+document.write("Último número da placa: " + placa + "<br>");
+document.write("Dia em que não poderá circular: " + dia);
+
+</script>

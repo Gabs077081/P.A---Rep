@@ -1,0 +1,23 @@
+<script>
+
+    var anoNascimento = parseInt(prompt("Digite o ano de nascimento"));
+    var idade = 2026 - anoNascimento;
+    var voto;
+
+    if (idade < 16) {
+    voto = "Voto proibido";
+}
+    else if (idade >= 16 && idade < 18) {
+    voto = "Voto opcional";
+}
+    else if (idade >= 18 && idade <= 70) {
+    voto = "Voto obrigatório";
+}
+    else {
+    voto = "Voto opcional";
+}
+
+document.write("Idade: " + idade + "<br>");
+document.write("Situação do voto: " + voto);
+
+</script>

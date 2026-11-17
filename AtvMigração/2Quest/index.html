@@ -1,0 +1,36 @@
+<script>
+
+var mes = parseInt(prompt("Digite o numero do mes (1 a 12):"));
+var dias;
+
+switch (mes) {
+
+    case 2:
+        dias = "28 dias";
+        break;
+
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        dias = "30 dias";
+        break;
+
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        dias = "31 dias";
+        break;
+
+    default:
+        dias = "Mes invalido";
+}
+
+document.write("Mes: " + mes + "<br>");
+document.write("Quantidade de dias: " + dias);
+
+</script>
