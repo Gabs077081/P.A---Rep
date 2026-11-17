@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 5 - Números pares e ímpares</title>
+</head>
+<body>
+
+<script>
+let numeros = [];
+let pares = 0;
+let impares = 0;
+
+for (let i = 0; i < 10; i++) {
+    numeros[i] = parseInt(prompt("Digite um número:"));
+}
+
+for (let i = 0; i < 10; i++) {
+    if (numeros[i] % 2 == 0) {
+        pares++;
+    } else {
+        impares++;
+    }
+}
+
+document.write("Números pares: " + pares + "<br>");
+document.write("Números ímpares: " + impares);
+</script>
+
+</body>
+</html>

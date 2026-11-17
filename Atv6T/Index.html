@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 6 - Pesquisa de um número</title>
+</head>
+<body>
+
+<script>
+let numeros = [];
+let encontrado = false;
+
+for (let i = 0; i < 10; i++) {
+    numeros[i] = parseInt(prompt("Digite um número:"));
+}
+
+let pesquisa = parseInt(prompt("Digite o número que deseja pesquisar:"));
+
+for (let i = 0; i < 10; i++) {
+    if (numeros[i] == pesquisa) {
+        encontrado = true;
+    }
+}
+
+if (encontrado == true) {
+    document.write("Número encontrado!");
+} else {
+    document.write("Número não encontrado!");
+}
+</script>
+
+</body>
+</html>

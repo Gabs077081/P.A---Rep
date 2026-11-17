@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 4 - Maior e menor valor</title>
+</head>
+<body>
+
+<script>
+let numeros = [];
+
+for (let i = 0; i < 10; i++) {
+    numeros[i] = parseInt(prompt("Digite um número:"));
+}
+
+let maior = numeros[0];
+let menor = numeros[0];
+
+for (let i = 1; i < 10; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i];
+    }
+
+    if (numeros[i] < menor) {
+        menor = numeros[i];
+    }
+}
+
+document.write("Maior número: " + maior + "<br>");
+document.write("Menor número: " + menor);
+</script>
+
+</body>
+</html>
